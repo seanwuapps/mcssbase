@@ -1,0 +1,20 @@
+{
+  "name": "mcssbase",
+  "version": "1.0.0",
+  "description": "Base CSS for a design system",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanwuapps/mcssbase.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/seanwuapps/mcssbase/issues"
+  },
+  "homepage": "https://github.com/seanwuapps/mcssbase#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
