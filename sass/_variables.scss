@@ -1,6 +1,21 @@
 $spacing: 8px;
+$colors: (
+  "darkblue": #191d32,
+  "blue": #282f44,
+  "grey": #453a49,
+  "light": #f1de9c,
+);
 
 :root,
 html {
+  // base spacing
   --base-spacing: #{$spacing};
+
+  // make colours available as css vars
+  @each $name, $hex in $colors {
+    --color-#{$name}: #{$hex};
+  }
+
+  //
+  --base-font-size: 16px;
 }

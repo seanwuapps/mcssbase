@@ -17,6 +17,7 @@
   "homepage": "https://github.com/seanwuapps/mcssbase#readme",
   "dependencies": {
     "bootstrap": "^5.0.0-beta3",
+    "markdown-to-html": "0.0.13",
     "sass": "^1.32.8"
   }
 }

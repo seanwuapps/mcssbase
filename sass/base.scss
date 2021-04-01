@@ -1,6 +1,7 @@
 // css files from bootstrap, changed filenames to .scss to include all content into base.css
 @import "./variables";
-@import "./overwrites";
 
-@import "./bootstrap/bootstrap-reboot.scss";
+@import "./overwrites";
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import "./bootstrap/bootstrap-essentials.scss";
+@import "./globals";

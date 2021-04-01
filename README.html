@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>base&period;css</title>
+        <style>
+</style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="basecss">base.css</h1>
+<p>Base CSS to start a design system</p>
+<h2 id="starting-with-bootstrap">Starting with Bootstrap</h2>
+<p>The following wheels are not to be reinvented.</p>
+<h3 id="reboot">Reboot</h3>
+<p><a href="https://getbootstrap.com/docs/5.0/content/reboot/">https://getbootstrap.com/docs/5.0/content/reboot/</a></p>
+<h3 id="breakpoints">Breakpoints</h3>
+<p><a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/">https://getbootstrap.com/docs/5.0/layout/breakpoints/</a></p>
+<h3 id="grid-system">Grid system</h3>
+<p><a href="https://getbootstrap.com/docs/5.0/layout/grid/">https://getbootstrap.com/docs/5.0/layout/grid/</a></p>
+<h3 id="colours">Colours</h3>
+<p>@TODO</p>
+<h3 id="utilities">Utilities</h3>
+<p>Following utilities are included in base.css</p>
+<ul>
+<li>Display: <a href="https://getbootstrap.com/docs/5.0/utilities/display/">https://getbootstrap.com/docs/5.0/utilities/display/</a></li>
+<li>Flex: <a href="https://getbootstrap.com/docs/5.0/utilities/flex/">https://getbootstrap.com/docs/5.0/utilities/flex/</a></li>
+<li>Spacing: <a href="https://getbootstrap.com/docs/5.0/utilities/spacing/">https://getbootstrap.com/docs/5.0/utilities/spacing/</a>
+<ul>
+<li><em>Note</em> We have overwritten the Boostrap spacing map <code>$spacers</code> to use CSS variable <code>--base-spacing</code>, see below.</li>
+</ul>
+</li>
+</ul>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--base-spacing</code></td>
+<td>Base value for spacing utilities such as <code>.mt-*</code> and <code>.pb-*</code></td>
+<td><code>8px</code></td>
+</tr>
+<tr>
+<td><code>--color-*</code></td>
+<td>Colour names</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+    </body>
+    </html>
