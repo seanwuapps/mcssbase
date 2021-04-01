@@ -1,0 +1,78 @@
+// stylelint-disable declaration-no-important
+
+// Margin and Padding
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (margin: m, padding: p) {
+      @for $i from 0 to 6 {
+        $length: calc(var(--base-spacing) * #{$i});
+        .#{$abbrev}#{$infix}-#{$i} {
+          #{$prop}: $length !important;
+        }
+        .#{$abbrev}t#{$infix}-#{$i},
+        .#{$abbrev}y#{$infix}-#{$i} {
+          #{$prop}-top: $length !important;
+        }
+        .#{$abbrev}r#{$infix}-#{$i},
+        .#{$abbrev}x#{$infix}-#{$i} {
+          #{$prop}-right: $length !important;
+        }
+        .#{$abbrev}b#{$infix}-#{$i},
+        .#{$abbrev}y#{$infix}-#{$i} {
+          #{$prop}-bottom: $length !important;
+        }
+        .#{$abbrev}l#{$infix}-#{$i},
+        .#{$abbrev}x#{$infix}-#{$i} {
+          #{$prop}-left: $length !important;
+        }
+      }
+    }
+
+    // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+    @for $i from 1 to 6 {
+      $length: calc(var(--base-spacing) * -#{$i});
+      .m#{$infix}-n#{$i} {
+        margin: $length !important;
+      }
+      .mt#{$infix}-n#{$i},
+      .my#{$infix}-n#{$i} {
+        margin-top: $length !important;
+      }
+      .mr#{$infix}-n#{$i},
+      .mx#{$infix}-n#{$i} {
+        margin-right: $length !important;
+      }
+      .mb#{$infix}-n#{$i},
+      .my#{$infix}-n#{$i} {
+        margin-bottom: $length !important;
+      }
+      .ml#{$infix}-n#{$i},
+      .mx#{$infix}-n#{$i} {
+        margin-left: $length !important;
+      }
+    }
+
+    // Some special margin utils
+    .m#{$infix}-auto {
+      margin: auto !important;
+    }
+    .mt#{$infix}-auto,
+    .my#{$infix}-auto {
+      margin-top: auto !important;
+    }
+    .mr#{$infix}-auto,
+    .mx#{$infix}-auto {
+      margin-right: auto !important;
+    }
+    .mb#{$infix}-auto,
+    .my#{$infix}-auto {
+      margin-bottom: auto !important;
+    }
+    .ml#{$infix}-auto,
+    .mx#{$infix}-auto {
+      margin-left: auto !important;
+    }
+  }
+}
