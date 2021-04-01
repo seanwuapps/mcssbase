@@ -1,0 +1,8 @@
+$spacers: (
+  0: 0,
+  1: calc(var(--base-spacing)),
+  2: calc(var(--base-spacing) * 2),
+  3: calc(var(--base-spacing) * 3),
+  4: calc(var(--base-spacing) * 4),
+  5: calc(var(--base-spacing) * 5),
+);

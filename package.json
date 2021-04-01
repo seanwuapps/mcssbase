@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Base CSS for a design system",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass sass/base.scss:dist/css/base.css && sass sass/base.scss:dist/css/base.min.css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,7 @@
   },
   "homepage": "https://github.com/seanwuapps/mcssbase#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "bootstrap": "^5.0.0-beta3",
+    "sass": "^1.32.8"
   }
 }
