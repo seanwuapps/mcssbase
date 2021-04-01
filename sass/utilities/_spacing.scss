@@ -1,4 +1,5 @@
 // stylelint-disable declaration-no-important
+$max-sizing-num: 6;
 
 // Margin and Padding
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -6,7 +7,7 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $prop, $abbrev in (margin: m, padding: p) {
-      @for $i from 0 to 6 {
+      @for $i from 0 to $max-sizing-num {
         $length: calc(var(--base-spacing) * #{$i});
         .#{$abbrev}#{$infix}-#{$i} {
           #{$prop}: $length !important;
@@ -31,7 +32,7 @@
     }
 
     // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
-    @for $i from 1 to 6 {
+    @for $i from 1 to $max-sizing-num {
       $length: calc(var(--base-spacing) * -#{$i});
       .m#{$infix}-n#{$i} {
         margin: $length !important;
