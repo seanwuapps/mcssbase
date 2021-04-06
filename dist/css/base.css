@@ -1,11 +1,39 @@
 :root,
 html {
-  --base-spacing: 8px;
-  --color-darkblue: #191d32;
-  --color-blue: #282f44;
-  --color-grey: #453a49;
-  --color-light: #f1de9c;
+  --color-primary-100: #E8EEF4;
+  --color-primary-200: #D4E2FC;
+  --color-primary-300: #4D9DF2;
+  --color-primary-400: #155CB3;
+  --color-primary-500: #18558E;
+  --color-primary-600: #233158;
+  --color-neutral-100: #F4F4F7;
+  --color-neutral-200: #E8E8E9;
+  --color-neutral-300: #E8E8E9;
+  --color-neutral-400: #AFAFAF;
+  --color-neutral-500: #7A7A7A;
+  --color-neutral-600: #545454;
+  --color-success-100: #E6F2ED;
+  --color-success-200: #89C6A0;
+  --color-success-300: #569A7C;
+  --color-success-400: #228B4D;
+  --color-success-500: #03582F;
+  --color-success-600: #10462D;
+  --color-warning-100: #FFFAF0;
+  --color-warning-200: #FFE3AC;
+  --color-warning-300: #FFCF70;
+  --color-warning-400: #FFC043;
+  --color-warning-500: #BC8B2C;
+  --color-warning-600: #674D1B;
+  --color-destructive-100: #FFEFED;
+  --color-destructive-200: #FED7D2;
+  --color-destructive-300: #F65B47;
+  --color-destructive-400: #E11900;
+  --color-destructive-500: #AB1300;
+  --color-destructive-600: #5A0A00;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
   --base-font-size: 16px;
+  --base-spacing: 8px;
 }
 
 /*!

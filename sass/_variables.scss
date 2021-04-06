@@ -1,21 +1,68 @@
 $spacing: 8px;
 $colors: (
-  "darkblue": #191d32,
-  "blue": #282f44,
-  "grey": #453a49,
-  "light": #f1de9c,
+  primary: (
+    100: "#E8EEF4",
+    200: "#D4E2FC",
+    300: "#4D9DF2",
+    400: "#155CB3",
+    500: "#18558E",
+    600: "#233158",
+  ),
+  neutral: (
+    100: "#F4F4F7",
+    200: "#E8E8E9",
+    300: "#E8E8E9",
+    400: "#AFAFAF",
+    500: "#7A7A7A",
+    600: "#545454",
+  ),
+  success: (
+    100: "#E6F2ED",
+    200: "#89C6A0",
+    300: "#569A7C",
+    400: "#228B4D",
+    500: "#03582F",
+    600: "#10462D",
+  ),
+  warning: (
+    100: "#FFFAF0",
+    200: "#FFE3AC",
+    300: "#FFCF70",
+    400: "#FFC043",
+    500: "#BC8B2C",
+    600: "#674D1B",
+  ),
+  destructive: (
+    100: "#FFEFED",
+    200: "#FED7D2",
+    300: "#F65B47",
+    400: "#E11900",
+    500: "#AB1300",
+    600: "#5A0A00",
+  ),
+  black: (
+    DEFAULT: "#000000",
+  ),
+  white: (
+    DEFAULT: "#FFFFFF",
+  ),
 );
 
 :root,
 html {
-  // base spacing
-  --base-spacing: #{$spacing};
-
   // make colours available as css vars
-  @each $name, $hex in $colors {
-    --color-#{$name}: #{$hex};
+  @each $group, $levels in $colors {
+    @each $level, $hex in $levels {
+      @if $level == "DEFAULT" {
+        --color-#{"" + $group}: #{$hex};
+      } @else {
+        --color-#{"" + $group}-#{$level}: #{$hex};
+      }
+    }
   }
 
-  //
+  // base font-size
   --base-font-size: 16px;
+  // base spacing
+  --base-spacing: #{$spacing};
 }

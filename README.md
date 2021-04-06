@@ -1,6 +1,29 @@
 # base.css
 Base CSS to start a design system
 
+## Usage
+
+```
+npm i mcssbase
+```
+
+**Html**
+
+```html
+<link rel="stylesheet" href="<mcssbase_root>/dist/css/base.css" />
+<!-- or use the minified version -->
+<link rel="stylesheet" href="<mcssbase_root>/dist/css/base.min.css" />
+```
+
+**JS**
+
+```javascript
+import 'mcssbase/dist/css/base.css';
+// or use the minified version
+import 'mcssbase/dist/css/base.min.css';
+```
+
+
 ## Starting with Bootstrap 
 
 The following wheels are not to be reinvented.
